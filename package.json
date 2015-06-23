@@ -1,0 +1,22 @@
+{
+  "name": "zac-boilerplate",
+  "version": "1.0.0",
+  "description": "Zac YU's boilerplate for creating websites",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuzijie/Boilerplate.git"
+  },
+  "keywords": [
+    "Foundation",
+    "Framework",
+    "Boilerplate"
+  ],
+  "author": "YU ZIJIE",
+  "license": "ISC",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/yuzijie/Boilerplate/issues"
+  },
+  "homepage": "https://github.com/yuzijie/Boilerplate#readme"
+}
