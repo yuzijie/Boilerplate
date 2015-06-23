@@ -1,0 +1,54 @@
+/*
+ *  Usage:
+ *
+ *    <div class="sk-spinner sk-spinner-three-bounce">
+ *      <div class="sk-bounce1"></div>
+ *      <div class="sk-bounce2"></div>
+ *      <div class="sk-bounce3"></div>
+ *    </div>
+ *
+ *  Dependencies:
+ *
+ *    Bourbon: http://bourbon.io
+ *
+ */
+
+$spinkit-spinner-margin: 0 auto !default;
+$spinkit-spinner-color: #333 !default;
+
+.sk-spinner-three-bounce {
+  &.sk-spinner {
+    margin: $spinkit-spinner-margin;
+    width: 80px;
+    text-align: center;
+  }
+
+  div {
+    width: 18px;
+    height: 18px;
+    background-color: $spinkit-spinner-color;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 4px;
+    @include animation(sk-threeBounceDelay 1.4s infinite ease-in-out);
+    /* Prevent first frame from flickering when animation starts */
+    @include animation-fill-mode(both);
+  }
+
+  .sk-bounce1 {
+    @include animation-delay(-0.32s);
+  }
+
+  .sk-bounce2 {
+    @include animation-delay(-0.16s);
+  }
+}
+
+@include keyframes(sk-threeBounceDelay) {
+  0%, 80%, 100% {
+    @include transform(scale(0.0));
+  }
+  40% {
+    @include transform(scale(1.0));
+  }
+}

@@ -1,0 +1,37 @@
+/*
+ * Dependencies:
+ *
+ *   SASS_modules/_breakpoints.scss
+ *
+ */
+@import '../../CSS/helper/mixins/breakpoints';
+
+/* ===========================================
+   Calling our writing-out function
+   =========================================== */
+
+html {
+  @include bp-dust() {
+    font-family: "dust";
+  }
+
+  @include bp-tiny() {
+    font-family: "tiny";
+  }
+
+  @include bp-small() {
+    font-family: "small";
+  }
+
+  @include bp-medium() {
+    font-family: "medium";
+  }
+
+  @include bp-large() {
+    font-family: "large";
+  }
+
+  @include bp-huge() {
+    font-family: "huge";
+  }
+}

@@ -1,0 +1,71 @@
+/*
+ * Dependencies:
+ *
+ *   SASS_modules/_breakpoints.scss
+ *
+ */
+/*
+ * Breakpoints
+ *
+ * Usage:
+ *
+ *   .sidebar {
+ *     width: 60%;
+ *     float: left;
+ *     margin: 0 2% 0 0;
+ *     @include bp-small {
+ *       width: 100%;
+ *       float: none;
+ *       margin: 0;
+ *     }
+ *   }
+ *
+ */
+/* ===========================================
+   Calling our writing-out function
+   =========================================== */
+@media only screen and (max-width: 480px) {
+  html {
+    font-family: "dust"; } }
+@media only screen and (min-width: 480px) {
+  html {
+    font-family: "tiny"; } }
+@media only screen and (min-width: 640px) {
+  html {
+    font-family: "small"; } }
+@media only screen and (min-width: 768px) {
+  html {
+    font-family: "medium"; } }
+@media only screen and (min-width: 960px) {
+  html {
+    font-family: "large"; } }
+@media only screen and (min-width: 1140px) {
+  html {
+    font-family: "huge"; } }
+
+html {
+  height: 100%;
+  transform-style: preserve-3d; }
+
+body {
+  margin: 0;
+  text-align: center;
+  font-size: 4vw;
+  font-family: sans-serif;
+  background: #E33D61;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-weight: normal; }
+
+span {
+  display: block;
+  color: #812236;
+  font-weight: bold;
+  font-size: 5.5vw; }
+
+/*# sourceMappingURL=out.css.map */
