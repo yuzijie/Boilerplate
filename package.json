@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/yuzijie/Boilerplate/issues"
   },
-  "homepage": "https://github.com/yuzijie/Boilerplate#readme"
+  "homepage": "https://github.com/yuzijie/Boilerplate#readme",
+  "dependencies": {
+    "bourbon": "^4.2.3",
+    "bourbon-neat": "^1.7.2",
+    "node.normalize.scss": "^3.0.3"
+  }
 }
